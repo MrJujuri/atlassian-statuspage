@@ -5,9 +5,9 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-const apiKey = '09f5c4fb-f74f-4001-8fd4-4b17e1f4b297';
-const pageId = 'bhxjqkbxr7cn';
-const metricId = 'xx80qfq8xbrv';
+const apiKey = 'YOUR KEY';
+const pageId = 'YOUR ID';
+const metricId = 'YOUR ID';
 const apiBase = 'https://api.statuspage.io/v1';
 const url = apiBase + '/pages/' + pageId + '/metrics/' + metricId + '/data.json';
 const authHeader = { 'Authorization': 'OAuth ' + apiKey };
